@@ -17,6 +17,7 @@ import gsap from 'gsap'
 const Gallery = ({ onSlideClick }) => {
 
   const btnRef = useRef(null)
+  
   useEffect(() => {
     gsap.to(btnRef.current, {
       scale: 1.2,
