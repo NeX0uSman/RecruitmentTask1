@@ -1,0 +1,30 @@
+.gallery_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper_div {
+    width: 100%;
+    max-width: 350px;
+}
+
+.swiper_div img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.cta_button {
+    width: 120px;
+    height: 120px;
+    background: url('../../assets/cta.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}

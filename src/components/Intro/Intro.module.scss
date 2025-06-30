@@ -1,0 +1,30 @@
+.intro_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headline_wrapper {
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+
+    .headline {
+        z-index: 1;
+        position: relative;
+        width: 100%;
+    }
+
+    .shadow {
+        z-index: 0;
+        opacity: 0.5;
+        position: absolute;
+        bottom: -21px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 110%;
+    }
+}

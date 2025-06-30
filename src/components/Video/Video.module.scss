@@ -1,0 +1,35 @@
+.video_container {
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+
+        video {
+            width:220px;
+            height:180px;
+        }
+
+        &.top_left video {
+            position: absolute;
+            top: 0;
+            left: 5px;
+        }
+
+       &.top_right video {
+            position: absolute;
+            top: 0;
+            right: 5px;
+        }
+
+        &.bottom_left video {
+            position: absolute;
+            bottom: 0;
+            left: 5px;
+        }
+
+        &.bottom_right video {
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+        }
+}
