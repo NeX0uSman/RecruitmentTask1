@@ -1,13 +1,50 @@
-# React + Vite
+Recruitment Task: Interactive Advertising Unit
+Overview
+This project is a mobile-responsive interactive advertising unit created using React + Vite, along with JavaScript (ES6+), SCSS, HTML, Swiper.js, and GSAP.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Structure and Features
+The application consists of 3 main scenes:
 
-Currently, two official plugins are available:
+Intro — displays a headline for 8 seconds.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Gallery — a product gallery built with Swiper.js; includes a pulsing CTA button animated with GSAP.
 
-## Expanding the ESLint configuration
+Video — displays a looping video positioned based on the user's selection in the gallery.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Custom Hooks
+The project contains 4 custom React hooks managing side effects and event tracking:
 
+useHide — detects when the user hides or switches away from the page; logs "page_hide" event.
+
+useOrientation — monitors device orientation; if not portrait, shows a prompt and hides main content.
+
+useResize — listens for window resize events; logs "window_resize" event.
+
+useSceneChange — tracks the current visible scene and logs "scene_change:{scene_name}".
+
+Components
+Intro.jsx — the intro scene component.
+
+Gallery.jsx — product gallery component implementing Swiper.js with clickable slides.
+
+Video.jsx — video scene component that plays video in positions corresponding to selected gallery slide.
+
+App.jsx — the main component managing scene state, orchestrating scene transitions and hooks usage.
+
+Assets
+All assets have been provided by 'bam!' and placed into assets folder.
+
+Technologies Used
+React (functional components + hooks)
+
+Vite (build tool)
+
+JavaScript (ES6+)
+
+SCSS (modular styles)
+
+Swiper.js (carousel gallery)
+
+GSAP (animations)
+
+HTML5
